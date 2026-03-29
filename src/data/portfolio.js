@@ -129,11 +129,12 @@ export const EXPERIENCE = [
     title: "Senior Frontend Developer",
     company: "Quick Live Solutions",
     location: "Remote",
-    period: "Aug 2022 – Present",
+    period: "Aug 2024 – Present",
     points: [
+      "Led development of high-performance web applications using React.js and modern JavaScript.",
       "Architected high-performance web applications using React.js and JavaScript — type-safe, scalable, maintainable.",
       "Implemented code splitting, lazy loading, improving page load times by 25%.",
-      "Refactored legacy JavaScript to JavaScript, reducing runtime errors by 40%.",
+      "Optimized frontend architecture for scalability, maintainability, and performance.",
     ],
   },
 
@@ -141,11 +142,11 @@ export const EXPERIENCE = [
     title: "Frontend Developer",
     company: "Quick Live Solutions",
     location: "Remote",
-    period: "Aug 2022 – Present",
+    period: "Aug 2022 – Jul 2024",
     points: [
-      "Architected high-performance web applications using React.js and JavaScript — type-safe, scalable, maintainable.",
-      "Implemented code splitting, lazy loading, improving page load times by 25%.",
-      "Refactored legacy JavaScript to JavaScript, reducing runtime errors by 40%.",
+      "Built responsive and user-friendly UI components using React.js.",
+      "Refactored legacy codebase to modern JavaScript (ES6+), reducing runtime errors by 20%.",
+      "Collaborated with backend and design teams to deliver seamless user experiences.",
     ],
   },
 
