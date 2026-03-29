@@ -18,7 +18,13 @@ export function Reveal({ children, delay = 0 }) {
 }
 
 // ── SectionHead ───────────────────────────────────────────────
-export function SectionHead({ eyebrow, title, titleSpan, sub, center = false }) {
+export function SectionHead({
+  eyebrow,
+  title,
+  titleSpan,
+  sub,
+  center = false,
+}) {
   return (
     <div className={`section-head${center ? " section-head--center" : ""}`}>
       <div className="section-head__eyebrow">
@@ -27,8 +33,7 @@ export function SectionHead({ eyebrow, title, titleSpan, sub, center = false }) 
       </div>
 
       <h2 className="section-head__title">
-        {title}{" "}
-        {titleSpan && <span className="grad-text">{titleSpan}</span>}
+        {title} {titleSpan && <span className="grad-text">{titleSpan}</span>}
       </h2>
 
       {sub && <p className="section-head__sub">{sub}</p>}

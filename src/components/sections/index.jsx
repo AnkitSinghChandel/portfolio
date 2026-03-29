@@ -1,8 +1,16 @@
 import { Reveal, SectionHead, Grid, Btn } from "../ui/index.jsx";
 import {
-  PROFILE, STATS, SKILLS, SERVICES, ACHIEVEMENTS,
-  EXPERIENCE, PROJECTS, EDUCATION, FUN_FACTS,
+  PROFILE,
+  STATS,
+  SKILLS,
+  SERVICES,
+  ACHIEVEMENTS,
+  EXPERIENCE,
+  PROJECTS,
+  EDUCATION,
+  FUN_FACTS,
 } from "../../data/portfolio.js";
+import ascResume from "../../../public/ascResume.pdf";
 
 // Cycle through accent slots 1-5 then back to 1
 const accentSlot = (i) => String((i % 5) + 1);
@@ -25,12 +33,14 @@ export function Hero() {
           Hi, I'm <span className="grad-text">{PROFILE.name}</span>
         </h1>
 
-        <p className="hero__role">{PROFILE.role}&nbsp;·&nbsp;{PROFILE.tagline}</p>
+        <p className="hero__role">
+          {PROFILE.role}&nbsp;·&nbsp;{PROFILE.tagline}
+        </p>
         <p className="hero__bio">{PROFILE.heroTagline}</p>
 
         <div className="hero__ctas">
-          <Btn href="#contact"  label="✉ Let's Talk"   variant="primary" />
-          <Btn href="#projects" label="View My Work →"  variant="ghost"   />
+          <Btn href="#contact" label="✉ Let's Talk" variant="primary" />
+          <Btn href="#projects" label="View My Work →" variant="ghost" />
         </div>
 
         <div className="hero__stats">
@@ -51,10 +61,10 @@ export function Hero() {
 // ─────────────────────────────────────────────────────────────
 export function About() {
   const infoItems = [
-    { label: "📍 Location",  val: PROFILE.location  },
-    { label: "🎓 Degree",    val: PROFILE.degree    },
-    { label: "📧 Email",     val: PROFILE.email     },
-    { label: "📞 Phone",     val: PROFILE.phone     },
+    { label: "📍 Location", val: PROFILE.location },
+    { label: "🎓 Degree", val: PROFILE.degree },
+    { label: "📧 Email", val: PROFILE.email },
+    { label: "📞 Phone", val: PROFILE.phone },
     { label: "🌐 Languages", val: PROFILE.languages },
   ];
 
@@ -75,7 +85,9 @@ export function About() {
             titleSpan="crafting great UIs"
           />
           {PROFILE.bio.map((p, i) => (
-            <p key={i} className="about__bio">{p}</p>
+            <p key={i} className="about__bio">
+              {p}
+            </p>
           ))}
 
           <div className="about__info-grid">
@@ -88,8 +100,19 @@ export function About() {
           </div>
 
           <div className="about__ctas">
-            <Btn href="https://drive.google.com/file/d/15j0X1qgBreXTQgNwqbq1JceeSck1LUs5/view?usp=sharing" label="📄 Download CV" variant="primary" />
-            <Btn href={PROFILE.linkedin} label="LinkedIn ↗"   variant="outline" target="_blank" />
+            <Btn
+              href={ascResume}
+              target="_blank"
+              rel="noopener noreferrer"
+              label="📄 Download CV"
+              variant="primary"
+            />
+            <Btn
+              href={PROFILE.linkedin}
+              label="LinkedIn ↗"
+              variant="outline"
+              target="_blank"
+            />
           </div>
         </Reveal>
       </div>
@@ -118,14 +141,19 @@ export function Skills() {
             <Reveal key={i} delay={i * 0.06}>
               {/* CSS selects icon colour via data-accent */}
               <div className="skill-card">
-                <div className="skill-card__icon icon-box" data-accent={accentSlot(i)}>
+                <div
+                  className="skill-card__icon icon-box"
+                  data-accent={accentSlot(i)}
+                >
                   {sk.icon}
                 </div>
                 <h3 className="skill-card__title">{sk.title}</h3>
                 <div className="skill-card__cat">{sk.cat}</div>
                 <div className="skill-card__tags">
                   {sk.tags.map((tag, j) => (
-                    <span key={j} className="skill-tag">{tag}</span>
+                    <span key={j} className="skill-tag">
+                      {tag}
+                    </span>
                   ))}
                 </div>
               </div>
@@ -157,7 +185,10 @@ export function Services() {
           {SERVICES.map((s, i) => (
             <Reveal key={i} delay={i * 0.05}>
               <div className="service-card">
-                <div className="service-card__icon icon-box" data-accent={accentSlot(i)}>
+                <div
+                  className="service-card__icon icon-box"
+                  data-accent={accentSlot(i)}
+                >
                   {s.icon}
                 </div>
                 <h3 className="service-card__title">{s.title}</h3>
@@ -179,7 +210,11 @@ export function Achievements() {
     <section id="achievements" className="section--alt">
       <div className="section-inner">
         <Reveal>
-          <SectionHead eyebrow="Impact & Metrics" title="Measurable" titleSpan="Achievements" />
+          <SectionHead
+            eyebrow="Impact & Metrics"
+            title="Measurable"
+            titleSpan="Achievements"
+          />
         </Reveal>
 
         <Grid min={200}>
@@ -189,7 +224,9 @@ export function Achievements() {
               <div className="achievement-card">
                 <div className="achievement-card__bar" />
                 <div className="achievement-card__icon">{a.icon}</div>
-                <div className="achievement-card__value grad-text">{a.value}</div>
+                <div className="achievement-card__value grad-text">
+                  {a.value}
+                </div>
                 <div className="achievement-card__label">{a.label}</div>
               </div>
             </Reveal>
@@ -236,7 +273,9 @@ export function Experience() {
                   {/* timeline__point::before draws the bullet via CSS */}
                   <ul className="timeline__points">
                     {job.points.map((pt, j) => (
-                      <li key={j} className="timeline__point">{pt}</li>
+                      <li key={j} className="timeline__point">
+                        {pt}
+                      </li>
                     ))}
                   </ul>
                 </div>
@@ -277,7 +316,9 @@ export function Projects() {
                 <p className="project-card__desc">{p.desc}</p>
                 <div className="project-card__footer">
                   {p.tags.map((tag, j) => (
-                    <span key={j} className="tag">{tag}</span>
+                    <span key={j} className="tag">
+                      {tag}
+                    </span>
                   ))}
                 </div>
               </div>
@@ -297,7 +338,11 @@ export function Education() {
     <section id="education">
       <div className="section-inner">
         <Reveal>
-          <SectionHead eyebrow="Education" title="Academic" titleSpan="Background" />
+          <SectionHead
+            eyebrow="Education"
+            title="Academic"
+            titleSpan="Background"
+          />
         </Reveal>
 
         <Grid min={280}>
@@ -327,7 +372,11 @@ export function FunFacts() {
     <section id="funfacts" className="section--alt">
       <div className="section-inner">
         <Reveal>
-          <SectionHead eyebrow="Quick Highlights" title="A Few Things" titleSpan="About Me" />
+          <SectionHead
+            eyebrow="Quick Highlights"
+            title="A Few Things"
+            titleSpan="About Me"
+          />
         </Reveal>
 
         <Grid min={210}>
@@ -365,8 +414,9 @@ export function Contact() {
         </h2>
 
         <p className="contact__sub">
-          Open to new opportunities, exciting projects, and creative collaborations.
-          Whether it's a full-time role or freelance — let's talk!
+          Open to new opportunities, exciting projects, and creative
+          collaborations. Whether it's a full-time role or freelance — let's
+          talk!
         </p>
 
         <a href={`mailto:${PROFILE.email}`} className="contact__email">
@@ -374,9 +424,23 @@ export function Contact() {
         </a>
 
         <div className="contact__links">
-          <Btn href={PROFILE.linkedin}       label="LinkedIn ↗"           variant="white"    target="_blank" />
-          <Btn href={PROFILE.github}         label="GitHub ↗"             variant="ghostInv" target="_blank" />
-          <Btn href={`tel:${PROFILE.phone}`} label={`📞 ${PROFILE.phone}`} variant="ghostInv" />
+          <Btn
+            href={PROFILE.linkedin}
+            label="LinkedIn ↗"
+            variant="white"
+            target="_blank"
+          />
+          <Btn
+            href={PROFILE.github}
+            label="GitHub ↗"
+            variant="ghostInv"
+            target="_blank"
+          />
+          <Btn
+            href={`tel:${PROFILE.phone}`}
+            label={`📞 ${PROFILE.phone}`}
+            variant="ghostInv"
+          />
         </div>
       </div>
     </section>

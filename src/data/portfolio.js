@@ -17,11 +17,11 @@ export const PROFILE = {
     "I specialize in React.js, Next.js, and JavaScript, with a strong emphasis on performance optimization, WAI-ARIA accessibility compliance, and responsive design. I love bridging the gap between great design and solid engineering.",
   ],
   heroTagline:
-    "I craft high-performance, accessible, and beautifully designed web applications. 4+ years turning complex ideas into clean, scalable frontend code — always with a focus on user experience and real-world impact.",
+    "I build fast, scalable, and user-centric web applications. 4+ years of experience turning complex ideas into clean, impactful frontend solutions.",
 };
 
 export const STATS = [
-  { num: "4+", label: "Years Exp" },
+  { num: "3+", label: "Years Exp" },
   { num: "25%", label: "Load Time ↓" },
   { num: "40%", label: "Errors Reduced" },
   { num: "30%", label: "Faster Delivery" },
@@ -38,25 +38,19 @@ export const SKILLS = [
     icon: "⚛",
     title: "JS Frameworks",
     cat: "Frontend Stack",
-    tags: ["React.js", "Next.js", "Redux", "Svelte", "SvelteKit", "jQuery"],
+    tags: ["React.js", "React Hooks", "Next.js", "Redux", "Redux Toolkit"],
   },
   {
     icon: "♿",
     title: "UI & Accessibility",
     cat: "Design & Standards",
-    tags: [
-      "Bootstrap 5",
-      "WAI-ARIA",
-      "ADA Compliance",
-      "React Native",
-      "Responsive",
-    ],
+    tags: ["Tailwind CSS", "Ant Design UI", "Responsive"],
   },
   {
     icon: "🔧",
     title: "Backend & APIs",
     cat: "Server Side",
-    tags: ["Node.js", "Express.js", "REST APIs", "Postman"],
+    tags: ["Node.js", "Express.js", "PostgreSQL", "REST APIs", "Postman"],
   },
   {
     icon: "🛠",
@@ -132,73 +126,100 @@ export const ACHIEVEMENTS = [
 
 export const EXPERIENCE = [
   {
-    title: "Frontend Developer",
-    company: "Nomad Credit",
+    title: "Senior Frontend Developer",
+    company: "Quick Live Solutions",
     location: "Remote",
-    period: "Sep 2025 – Present",
+    period: "Aug 2022 – Present",
     points: [
-      "Architected high-performance web applications using Next.js and JavaScript — type-safe, scalable, maintainable.",
-      "Implemented code splitting, lazy loading, and SSR, improving page load times by 25% and boosting SEO.",
+      "Architected high-performance web applications using React.js and JavaScript — type-safe, scalable, maintainable.",
+      "Implemented code splitting, lazy loading, improving page load times by 25%.",
       "Refactored legacy JavaScript to JavaScript, reducing runtime errors by 40%.",
     ],
   },
-  {
-    title: "Senior Application Developer",
-    company: "uCertify",
-    location: "Noida",
-    period: "Dec 2024 – Jul 2025",
-    points: [
-      "Spearheaded development of highly accessible web apps, ensuring 100% adherence to ADA compliance guidelines.",
-      "Enhanced complex applications using HTML, JS, jQuery & Bootstrap, improving performance by 15%.",
-      "Improved UI/UX for consistent experience across devices and browsers, reducing UI issues by 20%.",
-    ],
-  },
+
   {
     title: "Frontend Developer",
-    company: "GetePay",
-    location: "Jaipur",
-    period: "Sep 2023 – Nov 2024",
+    company: "Quick Live Solutions",
+    location: "Remote",
+    period: "Aug 2022 – Present",
     points: [
-      "Developed and maintained modular, reusable UI components using React.js and Redux.",
-      "Integrated a secure payment gateway with optimized responsive UI using React Native, +10% conversion.",
+      "Architected high-performance web applications using React.js and JavaScript — type-safe, scalable, maintainable.",
+      "Implemented code splitting, lazy loading, improving page load times by 25%.",
+      "Refactored legacy JavaScript to JavaScript, reducing runtime errors by 40%.",
     ],
   },
-  {
-    title: "Software Engineer",
-    company: "Quick Live Solution",
-    location: "Noida",
-    period: "Dec 2021 – Aug 2023",
-    points: [
-      "Designed and developed interactive UI components using JavaScript, React.js, and CSS.",
-      "Improved website performance through DOM manipulation and code optimization, +30% feature velocity.",
-    ],
-  },
+
+  // {
+  //   title: "Frontend Developer",
+  //   company: "GetePay",
+  //   location: "Jaipur",
+  //   period: "Sep 2023 – Nov 2024",
+  //   points: [
+  //     "Developed and maintained modular, reusable UI components using React.js and Redux.",
+  //     "Integrated a secure payment gateway with optimized responsive UI using React Native, +10% conversion.",
+  //   ],
+  // },
+
+  // {
+  //   title: "Software Engineer",
+  //   company: "Quick Live Solution",
+  //   location: "Noida",
+  //   period: "Dec 2021 – Aug 2023",
+  //   points: [
+  //     "Designed and developed interactive UI components using JavaScript, React.js, and CSS.",
+  //     "Improved website performance through DOM manipulation and code optimization, +30% feature velocity.",
+  //   ],
+  // },
 ];
 
 export const PROJECTS = [
   {
     num: "01",
     bar: "linear-gradient(90deg,#4f8ef7,#a78bfa)",
-    title: "Web Accessibility Platform",
-    org: "uCertify · 2024–2025",
-    desc: "Implemented semantic HTML and WAI-ARIA roles for improved screen reader support. Enhanced UI with 10+ new features including a redesigned home page for assistive technology users.",
-    tags: ["React.js", "WAI-ARIA", "Bootstrap", "ADA"],
+    title: "Team & User Management System 2.0",
+    org: "Personal · 2025–Present",
+    link: "https://grabit-frontend-development.up.railway.app",
+    desc: "Built a responsive frontend using React.js and Redux with centralized state management and efficient data flow. Integrated RESTful APIs with backend services and PostgreSQL for persistent data storage. Focused on reusable components, form validation, error handling, and scalable application architecture. including a redesigned home page for assistive technology users.",
+    tags: [
+      "React.js",
+      "JavaScript",
+      "Redux Toolkit",
+      "Tailwind CSS",
+      "Ant Design UI",
+      "Node.Js",
+      "REST API",
+      "PostgreSQL",
+    ],
   },
   {
     num: "02",
     bar: "linear-gradient(90deg,#a78bfa,#f472b6)",
-    title: "Learning Management System",
-    org: "GetePay · 2023–2024",
-    desc: "Built a comprehensive student dashboard to track credentials, upcoming classes, and announcements — seamlessly integrated via REST APIs with existing backend services.",
-    tags: ["React.js", "Redux", "REST API", "JavaScript"],
+    title: "Spire Essentials (A Software as a Service (SaaS) solution)",
+    org: "Quick Live Solutions · 2023–Present",
+    desc: "Developed a comprehensive Inventory and CRM management system to manage products, stock, customers, and invoicing. Implemented role-based access control, dynamic and responsive UI components, real-time search and filtering, and PDF invoice generation. Collaborated with backend teams for API integration and focused on performance optimization and seamless user experience.",
+    tags: [
+      "React.js",
+      "JavaScript",
+      "Redux",
+      "BootStrap",
+      "Node.Js",
+      "REST API",
+    ],
   },
   {
     num: "03",
     bar: "linear-gradient(90deg,#34d399,#4f8ef7)",
-    title: "GetePay Merchant Dashboard 2.0",
-    org: "GetePay · 2022–2023",
-    desc: "Integrated 'Link & Pay' feature for quick payment requests, improving navigation and report accessibility for merchants. Optimized responsive UI using React Native.",
-    tags: ["React.js", "React Native", "Payment Gateway", "Redux"],
+    title: "RBCE (Inventory Management System)",
+    org: "Quick Live Solutions · 2022–2023",
+    desc: "Developed a responsive inventory management application with dynamic product listing, CRUD operations, and real-time search and filtering. Integrated frontend with backend APIs for seamless data management and optimized UI for better performance. Collaborated with backend developers and UX designers to deliver a scalable solution.",
+    tags: [
+      "React.js",
+      "JavaScript",
+      "Redux",
+      "BootStrap",
+      "Node.Js",
+      "REST API",
+    ],
   },
 ];
 
@@ -206,8 +227,8 @@ export const EDUCATION = [
   {
     icon: "🎓",
     degree: "Master of Computer Applications (MCA)",
-    school: "SRM University · Chennai, Tamil Nadu",
-    period: "2023 – 2025",
+    school: "AKTU University · Uttar Pradesh, Lucknow",
+    period: "2024 – 2026",
   },
 ];
 

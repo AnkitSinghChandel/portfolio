@@ -893,7 +893,7 @@
   display: inline-block;
   font-family: "Poppins", sans-serif;
   font-size: clamp(0.9rem, 2.5vw, 1.5rem);
-  font-weight: 600;
+  font-weight: 500;
   color: #fff;
   text-decoration: none;
   background: rgba(255, 255, 255, 0.12);
