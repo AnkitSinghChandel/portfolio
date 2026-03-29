@@ -312,7 +312,16 @@ export function Projects() {
                 <div className="project-card__bar" />
                 <div className="project-card__num">{p.num}</div>
                 <h3 className="project-card__title">{p.title}</h3>
+
                 <p className="project-card__org">{p.org}</p>
+                <a
+                  href={p.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="project-card__link"
+                >
+                  {p.link}
+                </a>
                 <p className="project-card__desc">{p.desc}</p>
                 <div className="project-card__footer">
                   {p.tags.map((tag, j) => (

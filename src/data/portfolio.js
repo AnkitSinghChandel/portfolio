@@ -17,7 +17,7 @@ export const PROFILE = {
     "I specialize in React.js, Next.js, and JavaScript, with a strong emphasis on performance optimization, WAI-ARIA accessibility compliance, and responsive design. I love bridging the gap between great design and solid engineering.",
   ],
   heroTagline:
-    "I build fast, scalable, and user-centric web applications. 4+ years of experience turning complex ideas into clean, impactful frontend solutions.",
+    "I build fast, scalable, and user-centric web applications. 4+ years of experience turning complex ideas into clean, impactful frontend solutions. Available for freelance & full-time opportunities",
 };
 
 export const STATS = [
