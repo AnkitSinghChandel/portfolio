@@ -2,26 +2,27 @@ export const PROFILE = {
   name: "Ankit Singh",
   initials: "ASC",
   role: "Senior Frontend Developer",
-  tagline: "React.js · Next.js · JavaScript",
+  // tagline: "React.js · Next.js · JavaScript",
+  tagline: "React.js · JavaScript · Redux",
   badge: "Available for new opportunities",
   location: "Delhi-NCR, India",
   email: "ankitsinghchandel100@gmail.com",
   phone: "+91 8840356006",
-  linkedin: "https://www.linkedin.com/in/ankit-singh-481788262/",
+  linkedin: "https://www.linkedin.com/in/ankit-singh-481788262",
   // github: "https://github.com/goel802",
   status: "Open to Work",
   degree: "MCA — AKTU University",
   languages: "Hindi, English",
   bio: [
     "I'm a results-driven Frontend Developer with over 4 years of experience building dynamic, scalable, and user-centric web applications. My work spans fintech dashboards, e-learning platforms, and accessibility-focused tools.",
-    "I specialize in React.js, Next.js, and JavaScript, with a strong emphasis on performance optimization, WAI-ARIA accessibility compliance, and responsive design. I love bridging the gap between great design and solid engineering.",
+    "I specialize in React.js, JavaScript and Redux, with a strong emphasis on performance optimization, WAI-ARIA accessibility compliance, and responsive design. I love bridging the gap between great design and solid engineering.",
   ],
   heroTagline:
     "I build fast, scalable, and user-centric web applications. 4+ years of experience turning complex ideas into clean, impactful frontend solutions. Available for freelance & full-time opportunities",
 };
 
 export const STATS = [
-  { num: "3+", label: "Years Exp" },
+  { num: "4+", label: "Years Exp" },
   { num: "25%", label: "Load Time ↓" },
   { num: "40%", label: "Errors Reduced" },
   { num: "30%", label: "Faster Delivery" },
