@@ -130,46 +130,31 @@ export const EXPERIENCE = [
     title: "Senior Frontend Developer",
     company: "Quick Live Solutions",
     location: "Remote",
-    period: "Aug 2024 – Present",
+    period: "Aug 2022 – Present",
     points: [
       "Led development of high-performance web applications using React.js and modern JavaScript.",
-      "Architected high-performance web applications using React.js and JavaScript — type-safe, scalable, maintainable.",
-      "Implemented code splitting, lazy loading, improving page load times by 25%.",
-      "Optimized frontend architecture for scalability, maintainability, and performance.",
-    ],
-  },
 
-  {
-    title: "Frontend Developer",
-    company: "Quick Live Solutions",
-    location: "Remote",
-    period: "Aug 2022 – Jul 2024",
-    points: [
-      "Built responsive and user-friendly UI components using React.js.",
-      "Refactored legacy codebase to modern JavaScript (ES6+), reducing runtime errors by 20%.",
-      "Collaborated with backend and design teams to deliver seamless user experiences.",
+      "Architected high-performance web applications using React.js and JavaScript — type-safe, scalable, and maintainable.",
+
+      "Implemented code splitting and lazy loading, improving page load times by 25%.",
+
+      "Optimized React component performance using useMemo and useCallback to reduce unnecessary re-renders and improve application efficiency.",
+
+      "Built reusable and maintainable UI components following modern React best practices.",
+
+      "Optimized frontend architecture for scalability, maintainability, and performance.",
     ],
   },
 
   // {
   //   title: "Frontend Developer",
-  //   company: "GetePay",
-  //   location: "Jaipur",
-  //   period: "Sep 2023 – Nov 2024",
+  //   company: "Quick Live Solutions",
+  //   location: "Remote",
+  //   period: "Aug 2022 – Jul 2024",
   //   points: [
-  //     "Developed and maintained modular, reusable UI components using React.js and Redux.",
-  //     "Integrated a secure payment gateway with optimized responsive UI using React Native, +10% conversion.",
-  //   ],
-  // },
-
-  // {
-  //   title: "Software Engineer",
-  //   company: "Quick Live Solution",
-  //   location: "Noida",
-  //   period: "Dec 2021 – Aug 2023",
-  //   points: [
-  //     "Designed and developed interactive UI components using JavaScript, React.js, and CSS.",
-  //     "Improved website performance through DOM manipulation and code optimization, +30% feature velocity.",
+  //     "Built responsive and user-friendly UI components using React.js.",
+  //     "Refactored legacy codebase to modern JavaScript (ES6+), reducing runtime errors by 20%.",
+  //     "Collaborated with backend and design teams to deliver seamless user experiences.",
   //   ],
   // },
 ];
@@ -178,9 +163,9 @@ export const PROJECTS = [
   {
     num: "01",
     bar: "linear-gradient(90deg,#4f8ef7,#a78bfa)",
-    title: "Team & User Management System 2.0",
+    title: "Avion ERP Management System",
     org: "Personal · 2025–Present",
-    link: "https://grabit-frontend-development.up.railway.app",
+    link: "https://avion-frontend-development.up.railway.app",
     desc: "Built a responsive frontend using React.js and Redux with centralized state management and efficient data flow. Integrated RESTful APIs with backend services and PostgreSQL for persistent data storage. Focused on reusable components, form validation, error handling, and scalable application architecture. including a redesigned home page for assistive technology users.",
     tags: [
       "React.js",
@@ -198,6 +183,7 @@ export const PROJECTS = [
     bar: "linear-gradient(90deg,#a78bfa,#f472b6)",
     title: "Spire Essentials (A Software as a Service (SaaS) solution)",
     org: "Quick Live Solutions · 2023–Present",
+    link: "https://essentials-dev.spire.solutions",
     desc: "Developed a comprehensive Inventory and CRM management system to manage products, stock, customers, and invoicing. Implemented role-based access control, dynamic and responsive UI components, real-time search and filtering, and PDF invoice generation. Collaborated with backend teams for API integration and focused on performance optimization and seamless user experience.",
     tags: [
       "React.js",
